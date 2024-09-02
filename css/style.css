@@ -45,10 +45,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 1.20rem; }
-  .card__info__price h2 {
+  .card__info__price .price__amount {
     font-family: "Fraunces", serif;
     color: #3c8067;
     font-size: 2rem;
+    font-weight: 700;
     padding-right: 1.25rem; }
   .card__info__price h3 {
     font-family: "Montserrat", sans-serif;

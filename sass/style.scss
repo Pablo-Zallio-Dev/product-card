@@ -72,10 +72,11 @@ $fontFraunces: "Fraunces", serif;
         margin-bottom: 1.20rem;
 
 
-        h2 {
+        .price__amount {
             font-family: $fontFraunces;
             color: $colorPrimaryDarkCian;
             font-size: 2rem;
+            font-weight: 700;
             padding-right: 1.25rem;
 
         }
