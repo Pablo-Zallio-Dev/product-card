@@ -1,0 +1,179 @@
+/* COLORS */
+$colorPrimaryDarkCian: hsl(158, 36%, 37%);
+$colorPrimaryCream: hsl(30, 38%, 92%);
+
+$colorNeutralVeryDarkBlue: hsl(211, 23%, 18%);
+$colorNeutralDarkGrayishBlue: hsl(228, 12%, 48%);
+$colorNeutralWhite: hsl(0, 0%, 100%);
+
+/* FONTS */
+$fontMontserrat: "Montserrat", sans-serif;
+$fontFraunces: "Fraunces", serif;
+
+.container {
+  background-color: $colorPrimaryCream;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: $colorNeutralWhite;
+  width: 345px;
+  height: 610px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 100%;
+    height: 240px;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+  }
+
+  &__info {
+    height: 325px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.card__info {
+    
+    &__subtitle {
+        font-family: $fontMontserrat;
+        font-size: .75rem;
+        letter-spacing: .32rem;
+        margin-bottom: .5rem;
+    }
+
+    &__title {
+        font-family: $fontFraunces;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-family: $fontMontserrat;
+        font-size: .90rem;
+        margin-bottom: 1.25rem;
+        color: $colorNeutralVeryDarkBlue;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.20rem;
+
+
+        h2 {
+            font-family: $fontFraunces;
+            color: $colorPrimaryDarkCian;
+            font-size: 2rem;
+            padding-right: 1.25rem;
+
+        }
+
+        h5 {
+            font-family: $fontMontserrat;
+            font-weight: normal;
+            text-decoration: line-through;
+            color: $colorNeutralDarkGrayishBlue;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .75rem;
+        background-color: $colorPrimaryDarkCian;
+        color: $colorNeutralWhite;
+        border: none;
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: $fontMontserrat;
+        padding: .80rem 0;
+    }
+}
+
+.attribution {
+    background-color: $colorPrimaryCream;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-family: $fontMontserrat;
+    font-size: .75rem;
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    flex-direction: row;
+
+    &__image {
+        width: 306px;
+        height: 450px;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: contain;
+    }
+
+    &__info {
+        width: 240px;
+        height: 390px;
+        margin: 2rem;
+
+
+        &__subtitle {
+            font-family: $fontMontserrat;
+            font-size: .75rem;
+            letter-spacing: .32rem;
+            margin-bottom: .95rem;
+        }
+    
+        &__title {
+            font-family: $fontFraunces;
+            line-height: 2rem;
+            margin-bottom: 1.65rem;
+        }
+    
+        &__text {
+            font-family: $fontMontserrat;
+            font-size: .90rem;
+            margin-bottom: 1.35rem;
+        }
+
+        &__price {
+            margin-bottom: 1.75rem;
+        }
+
+        &__btn {
+            transition: background-color ease-in .25s;
+        }
+
+        &__btn:hover{
+            background-color: $colorNeutralVeryDarkBlue;
+            cursor: pointer;
+        }
+      }
+  }
+}
