@@ -50,9 +50,10 @@
     color: #3c8067;
     font-size: 2rem;
     padding-right: 1.25rem; }
-  .card__info__price h5 {
+  .card__info__price h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
+    font-size: .85rem;
     text-decoration: line-through;
     color: #6c7289; }
 .card__info__btn {

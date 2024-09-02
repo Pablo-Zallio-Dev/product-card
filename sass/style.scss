@@ -80,9 +80,10 @@ $fontFraunces: "Fraunces", serif;
 
         }
 
-        h5 {
+        h3 {
             font-family: $fontMontserrat;
             font-weight: normal;
+            font-size: .85rem;
             text-decoration: line-through;
             color: $colorNeutralDarkGrayishBlue;
         }
